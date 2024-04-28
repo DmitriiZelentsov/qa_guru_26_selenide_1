@@ -21,6 +21,6 @@ public class EnterpriseTests {
         $(withTagAndText("button","Solutions")).hover();
         $("[aria-labelledby=solutions-for-heading]").$(byText("Enterprise")).click();
 
-        $("#hero-section-brand-heading").shouldBe(text("The AI-powered\n" + "developer platform."));
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered\n" + "developer platform."));
         }
 }
